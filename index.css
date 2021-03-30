@@ -44,10 +44,11 @@ guidance for building shapes in css*/
 #Navysquare{
     z-index: 3;
     position: absolute;
+    margin:0;
+    padding:0;
     height: 820px;
     width: 900px;
     background-color: #2D3E51;
-    margin-left: 0px;
 }
 #Teal{
     position: absolute;
