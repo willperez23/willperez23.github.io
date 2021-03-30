@@ -1,3 +1,91 @@
-h1 { font-family: Merriweather;
-    font-size: larger;
+h1 { 
+    font-family: Merriweather;
+    
+    font-size: 65px;
+}
+h3{
+    font-family: Montserrat;
+    font-weight: 100;
+    font-size: 20px;
+}
+body{
+    background-color:#FFFCEC;
+}
+#Welcome{
+    position: absolute;
+    z-index: 4;
+    margin-top: 300px;
+    margin-left: 100px;
+    color:#FFFCEC;
+}
+#Description{
+    position: absolute;
+    z-index: 4;
+    width: 550px;
+    margin-left: 100px;
+    margin-top: 480px;
+    color: #FFFCEC;
+} 
+#Navy{
+    position: absolute;
+    z-index: 3;
+    padding:0px; 
+    width: 0;
+    height: 0;
+    margin-left: 900px;
+	border-top: 409px solid transparent;
+    border-left: 250px solid #2D3E51;
+    border-bottom: 409px solid transparent;
+    
+}
+/*
+adapted from: https://www.w3schools.com/howto/howto_css_shapes.asp
+guidance for building shapes in css*/
+#Navysquare{
+    z-index: 3;
+    position: absolute;
+    height: 820px;
+    width: 900px;
+    background-color: #2D3E51;
+    margin-left: 0px;
+}
+#Teal{
+    position: absolute;
+    z-index: 2;
+    padding:0px; 
+    width: 0;
+    height: 0;
+    margin-left: 1025px;
+	border-top: 409px solid transparent;
+    border-left: 250px solid #47928D;
+    border-bottom: 409px solid transparent;
+    
+}
+#Tealsquare{
+    position: absolute;
+    z-index: 2;
+    height: 820px;
+    width: 1025px;
+    background-color: #47928D;
+    margin-left: 0px;
+}
+#Babyblue{
+    position: absolute;
+    z-index: 1;
+    padding:0px; 
+    width: 0;
+    height: 0;
+    margin-left: 1150px;
+	border-top: 409px solid transparent;
+    border-left: 250px solid #7CA6C7;
+    border-bottom: 409px solid transparent;
+    
+}
+#Babybluesquare{
+    position: absolute;
+    z-index: 1;
+    height: 820px;
+    width: 1150px;
+    background-color: #7CA6C7;
+    margin-left: 0px;
 }
