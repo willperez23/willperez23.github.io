@@ -1,0 +1,27 @@
+
+  //about page 
+  #aboutFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutInfoFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .aboutInfoSectionFlex{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+  }
+  .aboutIcon:hover{
+    transform: translateY(-15px);
+  }

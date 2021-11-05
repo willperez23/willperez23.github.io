@@ -1,0 +1,65 @@
+$black: #3C3C3C;
+$yellow: #F2BC1B;
+$green: #B0D28A;
+$blue: #B4EAFC;
+$white: #FFFEFA;
+
+html{
+    color:$black
+}
+
+.header {
+    font-size: 1em;
+    margin-left: 45px;
+}
+
+.projectDetails{ 
+    margin-top: 30px;
+    width: 40%;
+    margin-left: 45px;
+}
+.projectDetails h2{
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+.projectDetails h3{
+    font-size: 2em;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.dateandtype{
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bluetag{
+    background-color: navy;
+    padding: 3px 08px 3px 08px;
+    border-radius: 5px;
+    margin-left: 15px;
+    color: $white;
+}
+
+.casestudybutton{
+    background-color: $yellow;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    color: $black;
+    box-shadow: $black;
+}
+
+.dot{
+    color: $black; 
+    border: $white;
+    padding: 10px;
+    margin: 10px;
+}
+.dotContainer{
+    margin-left: 40px;
+    margin-top: 20px;
+}
