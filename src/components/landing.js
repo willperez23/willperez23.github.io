@@ -35,13 +35,21 @@ class Landing extends Component {
           <button className="greenButton " type="button"> My Story</button>
         </div>
         <div className="socials landingFlexChild">
-          <div className="circle"><a href="https://twitter.com/williamperez000?lang=en"><img src="https://img.icons8.com/metro/452/twitter.png" alt="twiter icon" width="25px" /></a></div>
           <div className="circle">
             <a href="https://twitter.com/williamperez000?lang=en">
-              <img src="https://www.designbust.com/download/1026/png/email_icon_transparent_background512.png" alt="twiter icon" width="25px" />
+              <img src="https://img.icons8.com/metro/452/twitter.png" alt="twiter icon" width="25px" />
             </a>
           </div>
-          <div className="circle"><a href="https://www.linkedin.com/in/williamperez23/"><img src="http://simpleicon.com/wp-content/uploads/linkedin.svg" alt="linkedIn icon" width="25px" /></a></div>
+          <div className="circle">
+            <a href="mailto:william.23@dartmouth.edu">
+              <img src="https://www.designbust.com/download/1026/png/email_icon_transparent_background512.png" alt="email icon" width="25px" />
+            </a>
+          </div>
+          <div className="circle">
+            <a href="https://www.linkedin.com/in/williamperez23/">
+              <img src="http://simpleicon.com/wp-content/uploads/linkedin.svg" alt="linkedIn icon" width="25px" />
+            </a>
+          </div>
         </div>
 
       </div>
