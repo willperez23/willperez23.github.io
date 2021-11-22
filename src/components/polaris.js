@@ -1,46 +1,37 @@
 import React from 'react';
+import './general_project.scss';
 
 const polaris = () => {
   return (
     <div>
       <section>
-        <div>
-          <div>
+        <div className="landing_conatiner">
+          <div className="landing_sub_container_left">
             <h1>Polaris</h1>
             <divider />
             <h3>Case Study </h3>
-          </div>
-          <div>
             <h4>Purpose:</h4>
             <p>
-              As a language learning platform, BeepBoop
-              relies heavily on the teacher to student
-              interaction. Beepboop is in the process of
-              creating their MVP web/mobile platform for
-              their students and instructors, easing the
-              teaching process and consolidating all of
-              BeepBoop’s user data.
+              As the final project for COSC 25.01 at Dartmouth, tackling the
+              mental health topic. In the age of Zoom, college students have
+              placed a pause on their mental health. Polaris aims to provide
+              incentive to acheive personal goals, motivational quotes, as
+              well as a journaling self-reflection component.
             </p>
-          </div>
 
-          <div>
             <h4>Timeframe:</h4>
             <p>
               Approximately 2 Weeks
             </p>
-          </div>
 
-          <div>
             <h4>Team:</h4>
             <p>
-              William Perez - Designer <br />
               Maia Ward - Designer <br />
+              William Perez - Designer <br />
               Carson Levine  - Design Mentor <br />
-              Kim Mamers - Design Mentor
+              Kim Mamers - Design Industry Mentor <br />
             </p>
-          </div>
 
-          <div>
             <h4>Tags:</h4>
             <div className="tagRow">
               <p className="tag"> Mobile </p>
@@ -51,7 +42,7 @@ const polaris = () => {
             </div>
           </div>
         </div>
-        <img src="" alt="" width="" />
+        <img src="../images/Polaris Mock Ups.png" alt="" width="" />
       </section>
       <section>
         <h2>Mental Health as a Priority </h2>

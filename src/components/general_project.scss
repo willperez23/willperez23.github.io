@@ -1,0 +1,50 @@
+$black: #3C3C3C;
+$yellow: #F2BC1B;
+$green: #B0D28A;
+$blue: #B4EAFC;
+$white: #FFFEFA;
+$h1: 56px; 
+$h2: 36px; 
+$h3: 24px;
+$p: 16px;
+
+.landing_conatiner{ 
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+.landing_sub_container_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 30vw;
+    margin-left: 30px;
+}
+.tagRow{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+}
+.tag{
+    background-color: $yellow;
+    padding: 5px 10px;
+    margin-right: 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
+h1{
+    font-size: $h1;
+    margin:  5px 0px 5px 0px;
+    padding: 0px;
+}
+h3{
+    font-size: $h3;
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    font-size: $p;
+    margin: 0px;
+    padding: 0px;
+}

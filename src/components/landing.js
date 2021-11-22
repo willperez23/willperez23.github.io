@@ -29,7 +29,7 @@ class Landing extends Component {
 
         <p className="paragraph landingFlexChild">Designing, Developing, Innovating.
           <br />From idea, to Figma, and then to code.
-          <br />Currently looking for internship opportunities for Winter of 2022.
+          <br />Currently looking for internship opportunities for Winter and Summer of 2022.
         </p>
         <div className="landingFlexChild">
           <button className="greenButton " type="button"> My Story</button>
@@ -50,6 +50,10 @@ class Landing extends Component {
               <img src="http://simpleicon.com/wp-content/uploads/linkedin.svg" alt="linkedIn icon" width="25px" />
             </a>
           </div>
+        </div>
+        <div />
+        <div>
+          <h5>*This website was coded entirely by me :))</h5>
         </div>
 
       </div>

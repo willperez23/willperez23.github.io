@@ -4,13 +4,12 @@ const BetMate = () => {
   return (
     <div>
       <section>
-        <div>
-          <div>
+        <div className="landing_conatiner">
+          <div className="landing_sub_container_left">
             <h1>BetMate</h1>
             <divider />
             <h3>Case Study </h3>
-          </div>
-          <div>
+
             <h4>Purpose:</h4>
             <p>
               With the rise of chess interest after Netflix’s The Queen’s
@@ -20,27 +19,21 @@ const BetMate = () => {
               and outcomes of each match. The platform allows users to
               compete with other betters to earn virtual tokens!
             </p>
-          </div>
 
-          <div>
             <h4>Timeframe:</h4>
             <p>
               Approximately 8 Weeks
             </p>
-          </div>
 
-          <div>
             <h4>Team:</h4>
             <p>
               Archita Harathi - Designer  <br />
               William Perez - Designer <br />
               Wylie Kasai - Design Mentor <br />
             </p>
-          </div>
 
-          <div>
             <h4>Tags:</h4>
-            <div>
+            <div className="tagRow">
               <p className="tag">Web</p>
               <p className="tag">Betting </p>
               <p className="tag">Chess</p>

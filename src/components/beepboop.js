@@ -8,13 +8,12 @@ const beepboop = () => {
   return (
     <div>
       <section>
-        <div>
-          <div>
+        <div className="landing_conatiner">
+          <div className="landing_sub_container_left">
             <h1>BeepBoop.us</h1>
             <divider />
             <h3>Case Study </h3>
-          </div>
-          <div>
+
             <h4>Purpose:</h4>
             <p>
               As a language learning platform, BeepBoop
@@ -25,16 +24,12 @@ const beepboop = () => {
               teaching process and consolidating all of
               BeepBoop’s user data.
             </p>
-          </div>
 
-          <div>
             <h4>Timeframe:</h4>
             <p>
               Approximately 10 Weeks
             </p>
-          </div>
 
-          <div>
             <h4>Team:</h4>
             <p>
               Salvatore Lupo - Designer <br />
@@ -42,9 +37,7 @@ const beepboop = () => {
               Melissa Valencia - Designer <br />
               Devon Saliga - Company CEO <br />
             </p>
-          </div>
 
-          <div>
             <h4>Tags:</h4>
             <div className="tagRow">
               <p className="tag"> Mobile</p>
