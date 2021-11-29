@@ -25,3 +25,28 @@
   .aboutIcon:hover{
     transform: translateY(-15px);
   }
+
+  .metricsRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+  }
+  .metricsColumn{ 
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+    width: 50%;
+  }
+  .metricsContainer{
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    align-items: left;
+    margin-left: 25px;
+  }
+  .metricsContainer .centeredText{
+    text-align: center;
+  }
+

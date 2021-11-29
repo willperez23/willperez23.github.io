@@ -48,3 +48,74 @@ p{
     margin: 0px;
     padding: 0px;
 }
+.projectContainer{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentContainer{ 
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    justify-content: left;
+}
+.figmaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.centeredText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+}
+.centeredColumnContainer{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    margin-left: 50px;
+}
+.centeredRowContiner{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.lefttrisection{
+    width: 30vw;
+}
+.righttrisection{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+}
+// .crazy8{
+//     display: flex;
+//     flex-direction: columns;
+// }
+.centeredImages{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.thinImageConatiner{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.tri{
+    display: flex;
+    flex-direction: row;
+}

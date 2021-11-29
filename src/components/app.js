@@ -18,6 +18,7 @@ const FallBack = (props) => {
 const App = (props) => {
   return (
     <Router>
+      <title>William Perez Portfolio</title>
       <div>
         <NavBar />
         <Switch>

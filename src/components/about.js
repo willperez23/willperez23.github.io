@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import californiaVector from '../icons/californiaVector.svg';
 import computerVector from '../icons/computerVector.svg';
 import gradCapVector from '../icons/gradcapVector.svg';
 import '../about.scss';
 
-const About = () => {
-  return (
+const interestJSON = require('./interest.json');
+const designJSON = require('./software.json');
+const languagesJSON = require('./languages.json');
 
+const About = () => {
+  const [code, setCode] = useState(true);
+  const [design, setDesign] = useState(true);
+  const [interest, setInterest] = useState(interestJSON[0].context);
+  const [designContext, setDesignContext] = useState(designJSON[0].context);
+  const [languages, setLanguages] = useState(languagesJSON[0].context);
+  return (
     <div>
       <div id="aboutFlex">
         <h1 className="secondaryText">Will at a glance...</h1>
@@ -52,6 +60,172 @@ const About = () => {
         </div>
 
       </div>
+      <section>
+        <div className="metricsContainer">
+          <div className="metricsColumn">
+            <div>
+              <h2>Coding Langugages</h2>
+              <p>toggle between the two metrics
+              </p>
+              <div className="">
+                <button className="greenButton" type="button" onClick={() => setCode(true)}>confidence</button>
+                <button className="blackButton" type="button" onClick={() => setCode(false)}>lines coded</button>
+              </div>
+              {code ? (
+                <div>
+                  <div>
+                    <div className="metricsRow">
+                      <p> proficent</p>
+                      <p> intermediate</p>
+                      <p> advanced</p>
+                    </div>
+                    <div>
+                      <div aria-hidden="true" onClick={() => setLanguages(languagesJSON[1].context)}>
+                        <p>react</p>
+                        <div />
+                      </div>
+                      <div aria-hidden="true" onClick={() => setLanguages(languagesJSON[2].context)}>
+                        <p>python</p>
+                        <div />
+                      </div>
+                      <div aria-hidden="true" onClick={() => setLanguages(languagesJSON[3].context)}>
+                        <p>java</p>
+                        <div />
+                      </div>
+                      <div aria-hidden="true" onClick={() => setLanguages(languagesJSON[4].context)}>
+                        <p>xml</p>
+                        <div />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    {languages}
+                  </div>
+                </div>
+
+              ) : (
+                <div>
+                  <div>
+                    <div className="metricsRow">
+                      <p> 10,000</p>
+                      <p> 20,000</p>
+                      <p> 40,00</p>
+                    </div>
+                    <div>
+                      <div aria-hidden="true" onClick={() => setLanguages(languagesJSON[1].context)}>
+                        <p>react</p>
+                        <div />
+                      </div>
+                      <div aria-hidden="true" onClick={() => setLanguages(languagesJSON[2].context)}>
+                        <p>java</p>
+                        <div />
+                      </div>
+                      <div aria-hidden="true" onClick={() => setLanguages(languagesJSON[3].context)}>
+                        <p>python</p>
+                        <div />
+                      </div>
+                      <div aria-hidden="true" onClick={() => setLanguages(languagesJSON[4].context)}>
+                        <p>xml</p>
+                        <div />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    {languages}
+                  </div>
+                </div>
+              )}
+            </div>
+            <div>
+
+              <h2>Design Software</h2>
+              <p>toggle between the two metrics
+              </p>
+              <div className="">
+                <button className="greenButton" type="button" onClick={() => setDesign(true)}>confidence</button>
+                <button className="blackButton" type="button" onClick={() => setDesign(false)}>projects</button>
+              </div>
+              {design ? (
+                <div>
+                  <div>
+                    <div className="metricsRow">
+                      <p> proficent</p>
+                      <p> intermediate</p>
+                      <p> advanced</p>
+                    </div>
+                    <div>
+                      <div aria-hidden="true" onClick={() => setDesignContext(designJSON[1].context)}>
+                        <p>figma</p>
+                        <div />
+                      </div>
+                      <div aria-hidden="true" onClick={() => setDesignContext(designJSON[2].context)}>
+                        <p>AdobeXD</p>
+                        <div />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    {designContext}
+                  </div>
+                </div>
+
+              ) : (
+                <div>
+                  <div>
+                    <div className="metricsRow">
+                      <p> {'<'}5</p>
+                      <p> 10</p>
+                    </div>
+                    <div>
+                      <div aria-hidden="true" onClick={() => setDesignContext(designJSON[1].context)}>
+                        <p>figma</p>
+                        <div />
+                      </div>
+                      <div aria-hidden="true" onClick={() => setDesignContext(designJSON[2].context)}>
+                        <p>AdobeXD</p>
+                        <div />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    {designContext}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="metricsColumn centeredText">
+            <div className="">
+              <h2> my interest </h2>
+              <p> click on each icon to learn more about my personal interests</p>
+              <div>
+                <div className="metricsRow">
+                  <div aria-hidden="true" onClick={() => setInterest(interestJSON[1].context)}>
+                    <img alt="" />
+                    <p>aquatics</p>
+                  </div>
+                  <div aria-hidden="true" onClick={() => setInterest(interestJSON[2].context)}>
+                    <img alt="" />
+                    <p>queer novels</p>
+                  </div>
+                  <div aria-hidden="true" onClick={() => setInterest(interestJSON[3].context)}>
+                    <img alt="" />
+                    <p>political ecology</p>
+                  </div>
+                  <div aria-hidden="true" onClick={() => setInterest(interestJSON[4].context)}>
+                    <img alt="" />
+                    <p>astrology</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                {interest}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };

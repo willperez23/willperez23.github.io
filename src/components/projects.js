@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import { withRouter, NavLink, Link } from 'react-router-dom';
 
 import './projects.scss';
@@ -20,49 +21,13 @@ class Projects extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   if (this.state.current === 4) {
-  //     const newIntervalId = setInterval(() => {
-  //       this.setState((prevState) => {
-  //         return {
-  //           ...prevState,
-  //           count: 0,
-  //         };
-  //       });
-  //     }, 1000);
-
-  //     this.setState((prevState) => {
-  //       return {
-  //         ...prevState,
-  //         intervalId: newIntervalId,
-  //       };
-  //     });
-  //   } else {
-  //     const newIntervalId = setInterval(() => {
-  //       this.setState((prevState) => {
-  //         return {
-  //           ...prevState,
-  //           count: prevState.count + 1,
-  //         };
-  //       });
-  //     }, 1000);
-
-  //     this.setState((prevState) => {
-  //       return {
-  //         ...prevState,
-  //         intervalId: newIntervalId,
-  //       };
-  //     });
-  //   }
-  // }
-
   betmate = () => {
     // this.setState({ current: 0 });
-    this.setState({ name: jsonFile[0].name });
-    this.setState({ description: jsonFile[0].description });
-    this.setState({ time: jsonFile[0].time });
-    this.setState({ position: jsonFile[0].position });
-    this.setState({ type: jsonFile[0].type });
+    this.setState({ name: jsonFile[3].name });
+    this.setState({ description: jsonFile[3].description });
+    this.setState({ time: jsonFile[3].time });
+    this.setState({ position: jsonFile[3].position });
+    this.setState({ type: jsonFile[3].type });
   }
 
   beepboop = () => {
@@ -76,11 +41,11 @@ class Projects extends Component {
 
   polaris = () => {
     // this.setState({ current: 3 });
-    this.setState({ name: jsonFile[3].name });
-    this.setState({ description: jsonFile[3].description });
-    this.setState({ time: jsonFile[3].time });
-    this.setState({ position: jsonFile[3].position });
-    this.setState({ type: jsonFile[3].type });
+    this.setState({ name: jsonFile[0].name });
+    this.setState({ description: jsonFile[0].description });
+    this.setState({ time: jsonFile[0].time });
+    this.setState({ position: jsonFile[0].position });
+    this.setState({ type: jsonFile[0].type });
   }
 
   greeknav = () => {
