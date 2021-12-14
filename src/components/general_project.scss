@@ -12,7 +12,8 @@ $p: 16px;
     margin-top: 25px;
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: center; 
+    // justify-content: space-evenly;
 }
 .landing_sub_container_left{
     display: flex;
@@ -100,10 +101,17 @@ p{
     justify-content: center;
     width: 60vw;
 }
-// .crazy8{
-//     display: flex;
-//     flex-direction: columns;
-// }
+.leftRowContainer{
+    display: flex;
+    flex-direction: row;
+}
+.leftText{
+    width: 500px;
+    margin-right: 200px;
+}
+.marginBtm{
+    margin-bottom: 50px;
+}
 .centeredImages{ 
     display: flex; 
     flex-direction: row;
@@ -113,9 +121,35 @@ p{
 .thinImageConatiner{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 300px;
 }
 .tri{
     display: flex;
     flex-direction: row;
+}
+.projectsLanding{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: left; 
+}
+.rightMargin{
+    margin-right: 50px;
+}
+.polarisScreens{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    margin-right: 100px;
+}
+.caption{
+    text-align: center;
+}
+.noMargin{
+    margin: 0px
+}
+.smallMargin{
+    margin-right: 20px;
 }

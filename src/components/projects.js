@@ -68,38 +68,50 @@ class Projects extends Component {
 
     render = () => {
       return (
-        <div>
-          <div className="header">
-            <h1> Projects</h1>
-          </div>
-          <div className="projectDetails">
-            <h2>{this.state.name}</h2>
-            <h3>{this.state.position}</h3>
-            <div className="dateandtype">
-              <p>{this.state.time}</p>
-              <p className="bluetag"> {this.state.type}</p>
+        <div className="projectsLanding">
+          <div>
+            <div className="header">
+              <h1> Projects</h1>
             </div>
+            <div className="projectDetails">
+              <h2>{this.state.name}</h2>
+              <h3>{this.state.position}</h3>
+              <div className="dateandtype">
+                <span>{this.state.time}</span>
+                <span className="bluetag"> {this.state.type}</span>
+              </div>
 
-            <p>{this.state.description}</p>
-            <div className="casestudybutton_container">
-              {this.state.name === 'BetMate' ? <NavLink className="casestudybutton" to="casestudy/BetMate">Read the Case Study </NavLink>
-                : [this.state.name === 'GreekNav' ? (<a className="casestudybutton" href="src/documents/GreekNavFinalDemo.apk" download> Download the apk</a>)
-                  : [this.state.name === 'Polaris' ? <NavLink className="casestudybutton" to="casestudy/Polaris">Read the Case Study</NavLink>
-                    : [this.state.name === 'BeepBoop' ? <NavLink className="casestudybutton" to="casestudy/BeepBoop">Read the Case Study</NavLink>
-                      : <Link className="casestudybutton" to="casestudy/FosterFeedFriends">Visit Our Site</Link>,
+              <p>{this.state.description}</p>
+              <div className="casestudybutton_container">
+                {this.state.name === 'BetMate' ? <NavLink className="casestudybutton" to="casestudy/BetMate">Read the Case Study </NavLink>
+                  : [this.state.name === 'GreekNav' ? (<a className="casestudybutton" href="src/documents/GreekNavFinalDemo.apk" download> Download the apk</a>)
+                    : [this.state.name === 'Polaris' ? <NavLink className="casestudybutton" to="casestudy/Polaris">Read the Case Study</NavLink>
+                      : [this.state.name === 'BeepBoop' ? <NavLink className="casestudybutton" to="casestudy/BeepBoop">Read the Case Study</NavLink>
+                        : <Link className="casestudybutton" to="casestudy/FosterFeedFriends">Visit Our Site</Link>,
+                      ],
                     ],
-                  ],
-                ]}
+                  ]}
+              </div>
+
             </div>
 
+            <div className="dotContainer">
+              <button className="dot" type="button" onClick={this.polaris}> </button>
+              <button className="dot" type="button" onClick={this.beepboop}> </button>
+              <button className="dot" type="button" onClick={this.greeknav}> </button>
+              <button className="dot" type="button" onClick={this.betmate}> </button>
+              <button className="dot" type="button" onClick={this.fosterfeedfriends}> </button>
+            </div>
           </div>
-
-          <div className="dotContainer">
-            <button className="dot" type="button" onClick={this.polaris}> </button>
-            <button className="dot" type="button" onClick={this.beepboop}> </button>
-            <button className="dot" type="button" onClick={this.greeknav}> </button>
-            <button className="dot" type="button" onClick={this.betmate}> </button>
-            <button className="dot" type="button" onClick={this.fosterfeedfriends}> </button>
+          <div>
+            {this.state.name === 'BetMate' ? <img src="src/images/BetMateDevices.png" alt="BetMate MockUp" width="700px" />
+              : [this.state.name === 'GreekNav' ? <img src="src/images/GreekNavDevices.png" alt="GreekNav MockUp" width="700px" />
+                : [this.state.name === 'Polaris' ? <img className="polarisImage" src="src/images/PolarisDevices.png" alt="Polaris MockUp" width="700px" />
+                  : [this.state.name === 'BeepBoop' ? <img src="src/images/BeepBoopDevices.png" alt="BeepBoop MockUp" width="700px" />
+                    : <img src="src/images/FFFDevices.png" alt="Foster Feed Friends MockUp" width="700px" />,
+                  ],
+                ],
+              ]}
           </div>
         </div>
       );

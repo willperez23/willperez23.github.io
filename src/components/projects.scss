@@ -14,9 +14,10 @@ html{
 }
 
 .projectDetails{ 
-    margin-top: 30px;
-    width: 40%;
-    margin-left: 45px;
+    margin: 30px 0px 0px 45px;
+}
+.projectDetails p{
+    width: 600px;
 }
 .projectDetails h2{
     font-size: 5em;
@@ -27,6 +28,15 @@ html{
     font-weight: 200;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+.greyscales{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .dateandtype{
     display: flex;
@@ -59,6 +69,7 @@ html{
 .dot{
     background-color: $yellow;
     color: $yellow; 
+    opacity: .6;
     border: $white;
     border-radius: 10px;
     padding: 10px;
@@ -68,4 +79,9 @@ html{
 .dotContainer{
     margin-left: 40px;
     margin-top: 20px;
+}
+.spaceBetween{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
