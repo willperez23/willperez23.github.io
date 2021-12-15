@@ -1,5 +1,18 @@
 import React from 'react';
 import './general_project.scss';
+import polarisDevice from '../images/PolarisDevicesFlair.png';
+import polarisPersona from '../images/PolarisPersona.png';
+import polarisMindMapI from '../images/MindMapI.png';
+import polarisMindMapII from '../images/MindMapII.png';
+import polarisSketches from '../images/Polaris Sketches.png';
+import polarisGreyScalesI from '../images/Polaris GreyScales I.png';
+import polarisGreyScalesII from '../images/Polaris GreyScales II.png';
+import polarisGreyScalesIII from '../images/Polaris GreyScales III.png';
+import polarisStyle from '../images/Polaris Style Guide.png';
+import polarisLanding from '../images/PolarisLandingPage.png';
+import polarisScreenI from '../images/Polaris Screen I.png';
+import polarisScreenII from '../images/Polaris Screen II.png';
+import polarisScreenIII from '../images/Polaris Screen III.png';
 
 const polaris = () => {
   return (
@@ -43,7 +56,7 @@ const polaris = () => {
               </div>
             </div>
           </div>
-          <img src="../src/images/PolarisDevicesFlair.png" alt="Polaris Devices" />
+          <img src={polarisDevice} alt="Polaris Devices" />
         </div>
       </section>
       <section className="projectContainer">
@@ -71,13 +84,13 @@ const polaris = () => {
         </section>
         <section className="centeredRowContiner marginBtm">
           <div>
-            <img src="../src/images/PolarisPersona.png" alt="persona" width="700px" />
+            <img src={polarisPersona} alt="persona" width="700px" />
           </div>
           <div>
             <div className="centeredColumnContainer">
               <div className="centeredImages ">
-                <img src="../src/images/MindMapI.png" alt="sketch" width="250px" />
-                <img src="../src/images/MindMapII.png" alt="sketch" width="250px" />
+                <img src={polarisMindMapI} alt="sketch" width="250px" />
+                <img src={polarisMindMapII} alt="sketch" width="250px" />
               </div>
               <p>mind mapping exercise in which we identified the purpose and sentiments we wanted to be associated with our app using the dot voting method</p>
             </div>
@@ -105,7 +118,7 @@ const polaris = () => {
               </p>
             </div>
 
-            <img src="../src/images/Polaris Sketches.png" alt="Polaris Crazy 8 Sketches" />
+            <img src={polarisSketches} alt="Polaris Crazy 8 Sketches" />
           </div>
 
         </section>
@@ -123,11 +136,11 @@ const polaris = () => {
           </p>
           <div className="greyscales">
 
-            <img src="../src/images/Polaris GreyScales I.png" alt="Polaris Greyscales" />
+            <img src={polarisGreyScalesI} alt="Polaris Greyscales" />
 
-            <img src="../src/images/Polaris GreyScales II.png" alt="Polaris Greyscales" />
+            <img src={polarisGreyScalesII} alt="Polaris Greyscales" />
 
-            <img src="../src/images/Polaris GreyScales I.png" alt="Polaris Greyscales" />
+            <img src={polarisGreyScalesIII} alt="Polaris Greyscales" />
 
           </div>
         </section>
@@ -145,11 +158,11 @@ const polaris = () => {
                 We varied the boldness and italics to create a distinction amongst the singular font. Our navigation shifted to a scroll nagivation.
                 In the sky you would see the stars that guide you through your challenges, and as you dove into the pond, the water would bring clarity when you opened your journal.
               </p>
-              <img src="../src/images/Polaris Style Guide.png" alt="Polaris Style Guide" />
+              <img src={polarisStyle} alt="Polaris Style Guide" />
 
             </div>
             <div>
-              <img src="../src/images/PolarisLandingPage.png" alt="Polaris Landing Page" />
+              <img src={polarisLanding} alt="Polaris Landing Page" />
               <p>Our landing screen is the navigation screen, and can be reached through a vertical scroll.</p>
             </div>
 
@@ -169,15 +182,15 @@ const polaris = () => {
             </div>
             <div className="spaceBetween ">
               <div className="polarisScreens">
-                <img src="../src/images/Polaris Screen I.png" alt="Polaris Screen I" />
+                <img src={polarisScreenI} alt="Polaris Screen I" />
                 <p>emoji recap of the month in their journal </p>
               </div>
               <div className="polarisScreens">
-                <img src="../src/images/Polaris Screen II.png" alt="Polaris Screen II" />
+                <img src={polarisScreenII} alt="Polaris Screen II" />
                 <p>progress tracker of challenges, stars central to the display of progress</p>
               </div>
               <div className="polarisScreens">
-                <img src="../src/images/Polaris Screen III.png" alt="Polaris Screen III" />
+                <img src={polarisScreenIII} alt="Polaris Screen III" />
                 <p>journal with color tries to replicate an actual journal while also  offering more features</p>
               </div>
 

@@ -1,4 +1,23 @@
 import React from 'react';
+import betMateDevice from '../images/BetMate Device Fair.png';
+import betMateUserPersona from '../images/BetMate Persona.png';
+import betMateCompetitor from '../images/BetMate Competitors.png';
+import betMateUserJourney from '../images/BetMate User Journey.png';
+import betMateSketchI from '../images/BetMate Sketch I.png';
+import betMateSketchII from '../images/BetMate Sketch II.png';
+import betMateSketchIII from '../images/BetMate Sketch III.png';
+import betMateGreyScaleI from '../images/BetMate GreyScales I.png';
+import betMateGreyScaleII from '../images/BetMate GreyScales II.png';
+import betMateMechI from '../images/BetMate Betting Mech I.png';
+import betMateMechII from '../images/BetMate Betting Mech II.png';
+import betMateMechIII from '../images/BetMate Betting Mech III.png';
+import betMateOriginalLogo from '../images/BetMate Old Logo.png';
+import betMateInitialHifiI from '../images/BetMate Initial Hi-Fi I.png';
+import betMateInitialHifiII from '../images/BetMate Initial Hi-Fi II.png';
+import betMateInitialHifiIII from '../images/BetMate Initial Hi-Fi III.png';
+import betMateInitialHifiIV from '../images/BetMate Initial Hi-Fi IV.png';
+import betMateScreenI from '../images/BetMate Screens I.png';
+import betMateScreenII from '../images/BetMate Screens II.png';
 
 const BetMate = () => {
   return (
@@ -44,7 +63,7 @@ const BetMate = () => {
             </div>
 
           </div>
-          <img src="../src/images/BetMate Device Fair.png" alt="BetMate Screens" width="" />
+          <img src={betMateDevice} alt="BetMate Screens" width="" />
         </div>
       </section>
       <section className="projectContainer">
@@ -67,7 +86,7 @@ const BetMate = () => {
               A key insight was that there were limited options for betting on chess tournaments.
             </p>
 
-            <img className="smallMargin" src="../src/images/BetMate Competitors.png" alt="BetMate Competitor" width="300px" />
+            <img className="smallMargin" src={betMateCompetitor} alt="BetMate Competitor" width="300px" />
             <p>bwin was the closest competitor to BetMate. They had a variety of betting options; however it
               came at the cost of overwhelming the user. For new users, there was no betting explanation, and
               there were no live games, only scheduled games.
@@ -89,7 +108,7 @@ const BetMate = () => {
             </div>
           </div>
           <div className="righttrisection">
-            <img src="../src/images/BetMate Persona.png" alt="user persona" width="600px" />
+            <img src={betMateUserPersona} alt="user persona" width="600px" />
             <br />
             <p className="caption">Our target user was developed after conducting 8 user interviews. </p>
           </div>
@@ -97,7 +116,7 @@ const BetMate = () => {
 
         <section className="centeredText">
           <h1 className="marginBtm">“When playing chess you are living in a shared reality. The key to that reality is skill.”</h1>
-          <img src="../src/images/BetMate User Journey.png" alt="joruney map" width="" />
+          <img src={betMateUserJourney} alt="joruney map" width="" />
           <br />
           <p>We mapped out the <em>user flow </em> for the BetMate platform, breaking down users’ thoughts and emotions throughout
             each step. I focused heavily on the <em>betting flow</em> for users during a chess game and ensuring an enjoyable
@@ -114,9 +133,9 @@ const BetMate = () => {
             and I chose to focus on the in-game betting functionality. After <em>dot voting</em> as a team, we moved foward with the following crazy 8s:
           </p>
           <div className="centeredRowContiner">
-            <img className="rightMargin" src="../src/images/BetMate Sketch I.png" alt="crazy 8 I" width="" />
-            <img className="rightMargin" src="../src/images/BetMate Sketch II.png" alt=" crazy 8 II" width="" />
-            <img src="../src/images/BetMate Sketch III.png" alt="crazy 8 II" width="" />
+            <img className="rightMargin" src={betMateSketchI} alt="crazy 8 I" width="" />
+            <img className="rightMargin" src={betMateSketchII} alt=" crazy 8 II" width="" />
+            <img src={betMateSketchIII} alt="crazy 8 III" width="" />
           </div>
           <br />
           <p className="marginBtm"> As we prepared to share with the rest of the DALI Lab, our team found ourselves stuck on betting functionality.
@@ -144,11 +163,11 @@ const BetMate = () => {
               <br />
               <div className="centeredRowContiner">
                 <div>
-                  <img src="../src/images/BetMate GreyScales I.png" alt="BetMate GreyScales" width="" />
+                  <img src={betMateGreyScaleI} alt="BetMate GreyScales" width="" />
                   <p>Iteration 1: betting using tokens, centered layout of chesss and game betting</p>
                 </div>
                 <div>
-                  <img src="../src/images/BetMate GreyScales II.png" alt="BetMate GreyScales" width="" />
+                  <img src={betMateGreyScaleII} alt="BetMate GreyScales" width="" />
                   <p>Iteration 2: betting using sliders, sectioned layout of chesss and game betting </p>
                 </div>
               </div>
@@ -158,18 +177,18 @@ const BetMate = () => {
                 <br />
                 <div className="centeredRowContiner">
                   <div className="thinImageConatiner">
-                    <img src="../src/images/BetMate Betting Mech I.png" alt="BetMate Betting Mechanism" width="200px" />
+                    <img src={betMateMechI} alt="BetMate Betting Mechanism" width="200px" />
                     <br />
                     <br />
                     <p>Iteration 1: token betting. This method promoted the gamification of chess betting and targeted user interaction while displaying betting options in a vertical manner </p>
                   </div>
                   <div className="thinImageConatiner">
-                    <img src="../src/images/BetMate Betting Mech II.png" alt="BetMate Betting Mechanism" width="200px" />
+                    <img src={betMateMechII} alt="BetMate Betting Mechanism" width="200px" />
                     <br />
                     <p>Iteration 2: betting using sliders. This was a less gamified form of betting while still being intuitive with a horizontal display of move betting options</p>
                   </div>
                   <div className="thinImageConatiner">
-                    <img src="../src/images/BetMate Betting Mech III.png" alt="BetMate Betting Mechanism" width="200px" />
+                    <img src={betMateMechIII} alt="BetMate Betting Mechanism" width="200px" />
                     <br />
                     <p>Iteration 3: (after design crit) combination of horizontal betting options display with token betting. Also adding the odds bar below all the betting areas</p>
                   </div>
@@ -201,25 +220,25 @@ const BetMate = () => {
           <br />
           <div className="centeredImages marginBtm">
             <div className="rightMargin">
-              <img src="../src/images/BetMate Old Logo.png" alt="original logo" width="" />
+              <img src={betMateOriginalLogo} alt="original logo" width="" />
               <br />
               <p> Original Logo from Partners</p>
               <br />
-              <img src="../src/images/BetMate Initial Hi-Fi I.png" alt="initial hifi" width="" />
+              <img src={betMateInitialHifiI} alt="initial hifi" width="" />
               <p>Initial Gradient Log-In</p>
             </div>
             <div className="thinImageConatiner">
-              <img src="../src/images/BetMate Initial Hi-Fi II.png" alt="initial hifi" width="" />
+              <img src={betMateInitialHifiII} alt="initial hifi" width="" />
               <br />
               <p className="caption">Initial Dashboard</p>
             </div>
             <div className="thinImageConatiner">
-              <img src="../src/images/BetMate Initial Hi-Fi III.png" alt="initial hifi" width="" />
+              <img src={betMateInitialHifiIII} alt="initial hifi" width="" />
               <br />
               <p className="caption">Neon Iteration: Using bright neon gradients to make the most use of the dark UI</p>
             </div>
             <div className="thinImageConatiner">
-              <img src="../src/images/BetMate Initial Hi-Fi IV.png" alt="initial hifi" width="" />
+              <img src={betMateInitialHifiIV} alt="initial hifi" width="" />
               <br />
               <p className="caption">Pastel Iteration: Using pastels and large graphics to engage our target audience</p>
             </div>
@@ -243,9 +262,9 @@ const BetMate = () => {
             </div>
             <div className="contentContainer">
               <div className="leftRowContainer">
-                <img className="smallMargin" src="../src/images/BetMate Screens I.png" alt="BetMate Screens" width="" />
+                <img className="smallMargin" src={betMateScreenI} alt="BetMate Screens" width="" />
 
-                <img src="../src/images/BetMate Screens II.png" alt="BetMate Screens" width="" />
+                <img src={betMateScreenII} alt="BetMate Screens" width="" />
               </div>
               <br />
               <p className="caption">final implementation of neon gradients and betting currency </p>

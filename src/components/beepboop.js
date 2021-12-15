@@ -1,4 +1,17 @@
 import React from 'react';
+import beepBoopDevice from '../images/BeepBoopDevicesFlair.png';
+import beepBoopMindMap from '../images/BeepBoop MindMap.png';
+import beepBoopPersona from '../images/BeepBoop Persona.png';
+import beepBoopSketchI from '../images/BeepBoop Sketches I.png';
+import beepBoopSketchII from '../images/BeepBoop Sketches II.png';
+import beepBoopGreyscalesI from '../images/BeepBoop GreyScales I.png';
+import beepBoopGreyscalesII from '../images/BeepBoop GreyScales II.png';
+import beepBoopGreyscalesIII from '../images/BeepBoop GreyScales III.png';
+import beepBoopGreyscalesIV from '../images/BeepBoop Screens IV.png';
+import beepBoopStyle from '../images/BeepBoop Style.png';
+import beepBoopScreensI from '../images/BeepBoop Screens I.png';
+import beepBoopScreensII from '../images/BeepBoop Screens II.png';
+import beepBoopScreensIII from '../images/BeepBoop Screens III.png';
 
 const divider = () => {
   <div className="Bar" />;
@@ -49,7 +62,7 @@ const beepboop = () => {
               </div>
             </div>
           </div>
-          <img src="../src/images/BeepBoopDevicesFlair.png" alt="BeepBoop MockUps" />
+          <img src={beepBoopDevice} alt="BeepBoop MockUps" />
         </div>
       </section>
       <section className="projectContainer">
@@ -80,10 +93,10 @@ const beepboop = () => {
           </p>
           <div className="leftRowContainer">
             <div className="projectContainer">
-              <img src="../src/images/BeepBoop MindMap.png" alt="beep boop mind map" />
+              <img src={beepBoopMindMap} alt="beep boop mind map" />
               <h2 className="caption">HMW create a simple user flow to solidify our main features while also encouraging engagement?</h2>
             </div>
-            <img src="../src/images/BeepBoop Persona.png" alt="persona" width="" height="" />
+            <img src={beepBoopPersona} alt="persona" width="" height="" />
           </div>
         </section>
         <section className="contentContainer">
@@ -97,8 +110,8 @@ const beepboop = () => {
             designs that exemplified BeepBoop’s main features, while also incorporating as much <em>virality for the future growth of the company</em>.
           </p>
           <div className="centeredImages">
-            <img className="marginRight" src="../src/images/BeepBoop Sketches I.png" alt="crazy 8 sketches" width="" height="" />
-            <img src="../src/images/BeepBoop Sketches II.png" alt="crazy 8 sketches" width="" height="" />
+            <img className="rightMargin" src={beepBoopSketchI} alt="crazy 8 sketches" width="" height="" />
+            <img src={beepBoopSketchII} alt="crazy 8 sketches" width="" height="" />
           </div>
         </section>
         <section className="contentContainer">
@@ -112,19 +125,19 @@ const beepboop = () => {
           </p>
           <div className="centeredRowContiner marginBtm">
             <div className="polarisScreens">
-              <img src="../src/images/BeepBoop GreyScales I.png" alt="crazy 8 sketches" width="" height="" />
+              <img src={beepBoopGreyscalesI} alt="crazy 8 sketches" width="" height="" />
               <p className="caption">The profile overlay with options of edit login information, profile picture, and notification changes </p>
             </div>
             <div className="polarisScreens">
-              <img src="../src/images/BeepBoop GreyScales II.png" alt="crazy 8 sketches" width="" height="" />
+              <img src={beepBoopGreyscalesII} alt="crazy 8 sketches" width="" height="" />
               <p className="caption">The course catalog is avaliable here for the instructors to prep before their lesson or explore new lessons </p>
             </div>
             <div className="polarisScreens">
-              <img src="../src/images/BeepBoop GreyScales III.png" alt="crazy 8 sketches" width="" height="" />
+              <img src={beepBoopGreyscalesIII} alt="crazy 8 sketches" width="" height="" />
               <p className="caption">The general dashboard shows their lessons for the week and instructors can look at previous drill lessons </p>
             </div>
             <div className="polarisScreens noMargin">
-              <img src="../src/images/BeepBoop Screens IV.png" alt="crazy 8 sketches" width="" height="" />
+              <img src={beepBoopGreyscalesIV} alt="crazy 8 sketches" width="" height="" />
               <p className="caption">The review overlay offers instructors a view into student feedback and points of improvement</p>
             </div>
           </div>
@@ -142,19 +155,19 @@ const beepboop = () => {
             orange and blue.
           </p>
           <div className="centeredImages marginBtm">
-            <img src="../src/images/BeepBoop Style.png" alt="colors" width="" height="" />
+            <img src={beepBoopStyle} alt="colors" width="" height="" />
           </div>
           <div className="centeredRowContiner">
             <div className="polarisScreens">
-              <img src="../src/images/BeepBoop Screens I.png" alt="high-fi I" width="" height="" />
+              <img src={beepBoopScreensI} alt="high-fi I" width="" height="" />
               <p className="caption">landing home page with the neomorphism components and BeepBoop color palete </p>
             </div>
             <div className="polarisScreens">
-              <img src="../src/images/BeepBoop Screens II.png" alt="high-fi II" width="" height="" />
+              <img src={beepBoopScreensII} alt="high-fi II" width="" height="" />
               <p className="caption">profile page using the BeepBoop colors on components </p>
             </div>
             <div className="polarisScreens noMargin">
-              <img src="../src/images/BeepBoop Screens III.png" alt="high-fi III" width="" height="" />
+              <img src={beepBoopScreensIII} alt="high-fi III" width="" height="" />
               <p className="caption">reviews overlay with neomorphism components and BeepBoop color palette </p>
             </div>
           </div>

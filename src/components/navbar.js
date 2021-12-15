@@ -16,7 +16,6 @@ class NavBar extends Component {
         <div className="Logo">William Pérez</div>
         <span id="links">
           <NavLink to="/" exact>Home</NavLink>
-          <NavLink to="/mystory">My Story</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/projects">Projects</NavLink>
         </span>

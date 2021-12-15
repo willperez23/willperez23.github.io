@@ -1,17 +1,17 @@
 [
     {
-        "name":"Polaris",
-        "description": "In the age of Zoom, college students have placed a pause on their mental health due to various reasons whether its family, work, school or anything in between. Polaris aims to provide incentive to acheive personal goals, motivational quotes, as well as a journaling self-reflection component.", 
-        "time": "June 2020",
-        "position": "UI/UX Designer",
-        "type":"Mobile"
-    },
-    {
         "name":"BetMate",
         "description": "With the rise of chess interest after Netflix’s The Queen’s Gambit, BetMate aims to capitalize on the chess interest through a chess specific betting platform, offering a new way of engaging with chess matches through betting on each move and outcomes of each match.", 
         "time": "March 2021 - August 2021 ",
         "position": "UI/UX Designer",
         "type":"Web"
+    },
+    {
+        "name":"FosterFeedFriends", 
+        "description":"There is a systemic lack of support for the foster youth of America. FosterFeedFreinds aims to bridge a large gap of support for these youth as they prepare to age of a broken system, offering them access to mentors and organizations willing to help them succeed.",
+        "time": "June 2021", 
+        "position":"Full Stack Web Developer", 
+        "type": "Web"
     },
     {
         "name":"GreekNav",
@@ -20,7 +20,7 @@
         "position": "Front End Developer",
         "type":"Mobile"
     },
-   {
+    {
         "name":"BeepBoop",
         "description": "BeepBoop is a language learning platform focused on improving user pronunciation. This company aims to adapt a version of language learning at Dartmouth. I worked on designing the general platform to be used across mulitple devices.", 
         "time": "Dec 2020",
@@ -28,10 +28,13 @@
         "type":"Mobile"
     },
     {
-        "name":"FosterFeedFriends", 
-        "description":"There is a systemic lack of support for the foster youth of America. FosterFeedFreinds aims to bridge a large gap of support for these youth as they prepare to age of a broken system, offering them access to mentors and organizations willing to help them succeed.",
-        "time": "June 2021", 
-        "position":"Full Stack Web Developer", 
-        "type": "Web"
+        "name":"Polaris",
+        "description": "In the age of Zoom, college students have placed a pause on their mental health due to various reasons whether its family, work, school or anything in between. Polaris aims to provide incentive to acheive personal goals, motivational quotes, as well as a journaling self-reflection component.", 
+        "time": "June 2020",
+        "position": "UI/UX Designer",
+        "type":"Mobile"
     }
+
+
+
 ]
