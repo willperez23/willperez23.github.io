@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { withRouter, NavLink, Link } from 'react-router-dom';
-
 import './projects.scss';
+import polaris from '../images/BetMateDevices.png';
+import betMate from '../images/GreekNavDevices.png';
+import greekNav from '../images/PolarisDevices.png';
+import foster from '../images/FFFDevices.png';
+import beepBoop from '../images/BeepBoopDevices.png';
 
 const jsonFile = require('./projects.json');
 
@@ -104,11 +107,11 @@ class Projects extends Component {
             </div>
           </div>
           <div>
-            {this.state.name === 'BetMate' ? <img src="src/images/BetMateDevices.png" alt="BetMate MockUp" width="700px" />
-              : [this.state.name === 'GreekNav' ? <img src="src/images/GreekNavDevices.png" alt="GreekNav MockUp" width="700px" />
-                : [this.state.name === 'Polaris' ? <img className="polarisImage" src="src/images/PolarisDevices.png" alt="Polaris MockUp" width="700px" />
-                  : [this.state.name === 'BeepBoop' ? <img src="src/images/BeepBoopDevices.png" alt="BeepBoop MockUp" width="700px" />
-                    : <img src="src/images/FFFDevices.png" alt="Foster Feed Friends MockUp" width="700px" />,
+            {this.state.name === 'BetMate' ? <img src={betMate} alt="BetMate MockUp" width="700px" />
+              : [this.state.name === 'GreekNav' ? <img src={greekNav} alt="GreekNav MockUp" width="700px" />
+                : [this.state.name === 'Polaris' ? <img className="polarisImage" src={polaris} alt="Polaris MockUp" width="700px" />
+                  : [this.state.name === 'BeepBoop' ? <img src={beepBoop} alt="BeepBoop MockUp" width="700px" />
+                    : <img src={foster} alt="Foster Feed Friends MockUp" width="700px" />,
                   ],
                 ],
               ]}
