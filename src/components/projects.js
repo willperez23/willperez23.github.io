@@ -99,11 +99,11 @@ class Projects extends Component {
             </div>
 
             <div className="dotContainer">
-              <button className="dot" type="button" onClick={this.polaris}> </button>
-              <button className="dot" type="button" onClick={this.beepboop}> </button>
-              <button className="dot" type="button" onClick={this.greeknav}> </button>
               <button className="dot" type="button" onClick={this.betmate}> </button>
+              <button className="dot" type="button" onClick={this.greeknav}> </button>
               <button className="dot" type="button" onClick={this.fosterfeedfriends}> </button>
+              <button className="dot" type="button" onClick={this.beepboop}> </button>
+              <button className="dot" type="button" onClick={this.polaris}> </button>
             </div>
           </div>
           <div>
