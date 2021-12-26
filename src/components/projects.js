@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter, NavLink, Link } from 'react-router-dom';
 import './projects.scss';
-import polaris from '../images/BetMateDevices.png';
-import betMate from '../images/GreekNavDevices.png';
-import greekNav from '../images/PolarisDevices.png';
+import betMate from '../images/BetMateDevices.png';
+import greekNav from '../images/GreekNavDevices.png';
+import polaris from '../images/PolarisDevices.png';
 import foster from '../images/FFFDevices.png';
 import beepBoop from '../images/BeepBoopDevices.png';
 
@@ -26,24 +26,6 @@ class Projects extends Component {
 
   betmate = () => {
     // this.setState({ current: 0 });
-    this.setState({ name: jsonFile[3].name });
-    this.setState({ description: jsonFile[3].description });
-    this.setState({ time: jsonFile[3].time });
-    this.setState({ position: jsonFile[3].position });
-    this.setState({ type: jsonFile[3].type });
-  }
-
-  beepboop = () => {
-    // this.setState({ current: 2 });
-    this.setState({ name: jsonFile[2].name });
-    this.setState({ description: jsonFile[2].description });
-    this.setState({ time: jsonFile[2].time });
-    this.setState({ position: jsonFile[2].position });
-    this.setState({ type: jsonFile[2].type });
-  }
-
-  polaris = () => {
-    // this.setState({ current: 3 });
     this.setState({ name: jsonFile[0].name });
     this.setState({ description: jsonFile[0].description });
     this.setState({ time: jsonFile[0].time });
@@ -51,22 +33,40 @@ class Projects extends Component {
     this.setState({ type: jsonFile[0].type });
   }
 
+  beepboop = () => {
+    // this.setState({ current: 2 });
+    this.setState({ name: jsonFile[3].name });
+    this.setState({ description: jsonFile[3].description });
+    this.setState({ time: jsonFile[3].time });
+    this.setState({ position: jsonFile[3].position });
+    this.setState({ type: jsonFile[3].type });
+  }
+
+  polaris = () => {
+    // this.setState({ current: 3 });
+    this.setState({ name: jsonFile[4].name });
+    this.setState({ description: jsonFile[4].description });
+    this.setState({ time: jsonFile[4].time });
+    this.setState({ position: jsonFile[4].position });
+    this.setState({ type: jsonFile[4].type });
+  }
+
   greeknav = () => {
+    // this.setState({ current: 1 });
+    this.setState({ name: jsonFile[2].name });
+    this.setState({ description: jsonFile[2].description });
+    this.setState({ time: jsonFile[2].time });
+    this.setState({ position: jsonFile[2].position });
+    this.setState({ type: jsonFile[2].type });
+  }
+
+  fosterfeedfriends = () => {
     // this.setState({ current: 1 });
     this.setState({ name: jsonFile[1].name });
     this.setState({ description: jsonFile[1].description });
     this.setState({ time: jsonFile[1].time });
     this.setState({ position: jsonFile[1].position });
     this.setState({ type: jsonFile[1].type });
-  }
-
-  fosterfeedfriends = () => {
-    // this.setState({ current: 1 });
-    this.setState({ name: jsonFile[4].name });
-    this.setState({ description: jsonFile[4].description });
-    this.setState({ time: jsonFile[4].time });
-    this.setState({ position: jsonFile[4].position });
-    this.setState({ type: jsonFile[4].type });
   }
 
     render = () => {
@@ -106,6 +106,7 @@ class Projects extends Component {
               <button className="dot" type="button" onClick={this.polaris}> </button>
             </div>
           </div>
+          {console.log(this.state.name)}
           <div>
             {this.state.name === 'BetMate' ? <img src={betMate} alt="BetMate MockUp" width="700px" />
               : [this.state.name === 'GreekNav' ? <img src={greekNav} alt="GreekNav MockUp" width="700px" />

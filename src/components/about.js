@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import React from 'react';
 import californiaVector from '../icons/californiaVector.svg';
 import computerVector from '../icons/computerVector.svg';
 import gradCapVector from '../icons/gradcapVector.svg';
 import '../about.scss';
 
-const interestJSON = require('./interest.json');
-const designJSON = require('./software.json');
-const languagesJSON = require('./languages.json');
+// const interestJSON = require('./interest.json');
+// const designJSON = require('./software.json');
+// const languagesJSON = require('./languages.json');
 
 const About = () => {
-  const [code, setCode] = useState(true);
-  const [design, setDesign] = useState(true);
-  const [interest, setInterest] = useState(interestJSON[0].context);
-  const [designContext, setDesignContext] = useState(designJSON[0].context);
-  const [languages, setLanguages] = useState(languagesJSON[0].context);
+  // const [code, setCode] = useState(true);
+  // const [design, setDesign] = useState(true);
+  // const [interest, setInterest] = useState(interestJSON[0].context);
+  // const [designContext, setDesignContext] = useState(designJSON[0].context);
+  // const [languages, setLanguages] = useState(languagesJSON[0].context);
   return (
     <div>
       <div id="aboutFlex">
@@ -60,7 +61,7 @@ const About = () => {
         </div>
 
       </div>
-      <section>
+      {/* <section>
         <div className="metricsContainer">
           <div className="metricsColumn">
             <div>
@@ -224,7 +225,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );
